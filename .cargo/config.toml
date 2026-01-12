@@ -1,0 +1,21 @@
+# Cargo configuration for MuJoCo setup
+# This tells mujoco-rs where to find the MuJoCo dynamic library
+
+[env]
+# User-local installation (macOS user frameworks - RECOMMENDED)
+# Replace 'aarontran' with your username if different
+MUJOCO_DYNAMIC_LINK_DIR = "/Users/aarontran/Library/Frameworks/Versions/Current"
+
+# Alternative locations (uncomment if you installed elsewhere):
+#
+# System-wide frameworks (requires sudo to install):
+# MUJOCO_DYNAMIC_LINK_DIR = "/Library/Frameworks/Versions/Current"
+#
+# Homebrew installation (if/when available):
+# MUJOCO_DYNAMIC_LINK_DIR = "/opt/homebrew/lib"
+#
+# Traditional Unix location:
+# MUJOCO_DYNAMIC_LINK_DIR = "/usr/local/lib"
+#
+# Different user (update username):
+# MUJOCO_DYNAMIC_LINK_DIR = "/Users/yourname/Library/Frameworks/Versions/Current"

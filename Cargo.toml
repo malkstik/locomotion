@@ -1,0 +1,23 @@
+[package]
+name = "biped_locomotion"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# Linear algebra and math
+nalgebra = { version = "0.33", features = ["serde-serialize"] }
+
+# MuJoCo bindings (requires MuJoCo to be installed - see README for instructions)
+# mujoco-rs = "2.2"
+
+# Kinematics and IK
+k = "0.32"  # Latest version - let's test if dependencies are fixed
+
+# Optimization (for DDP trajectory generation)
+argmin = "0.10"
+argmin-math = "0.4"
+
+# Utilities
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+mujoco-rs = { version = "2.2.1", default-features = false, features = ["viewer", "viewer-ui", "renderer", "renderer-winit-fallback"] }
