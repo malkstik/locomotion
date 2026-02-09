@@ -1,5 +1,5 @@
 use nalgebra as na;
-use crate::biped::{BipedState, BipedParams};
+use crate::biped::BipedState;
 
 /// Zero Moment Point calculator
 ///
